@@ -1,19 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Estrellada</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victoria Carril - QA Tester</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="stars"></div>
-    <div class="content">
-        <h1>Bienvenido a Mi Página</h1>
-        <textarea id="entrada" placeholder="Escribe tus entradas aquí..."></textarea>
-        <input type="file" id="fileInput" accept="application/pdf">
-        <iframe id="pdfViewer" width="600" height="400"></iframe>
+
+  <header>
+    <nav>
+      <div class="logo">Victoria QA</div>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#automation">Automatización</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Victoria</h1>
+    <p>QA Tester & Digital Producer. Explorando, testeando y mejorando experiencias digitales.</p>
+    <a href="#projects" class="btn">Ver mis proyectos</a>
+  </section>
+
+  <section id="about">
+    <h2>Sobre mí</h2>
+    <p>Soy QA Tester enfocada en testing manual y automatizado de páginas web, software y videojuegos. Apasionada por detectar errores, mejorar UX y documentar procesos de manera precisa y profesional.</p>
+    <h3>Herramientas y habilidades:</h3>
+    <p>Jira | TestLink | Trello | Postman | Selenium | GitHub | Excel | Comunicación | Documentación | Pensamiento crítico</p>
+  </section>
+
+  <section id="projects">
+    <h2>Proyectos</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Prueba Web - E-commerce</h3>
+        <p>Testeo funcional de login, búsqueda y checkout. Herramientas: Jira, Excel, TestLink.</p>
+        <a href="#" class="btn">Ver caso de prueba</a>
+      </div>
+      <div class="card">
+        <h3>Juego Indie - Unity</h3>
+        <p>Evalué colisiones, jugabilidad y UI. Herramientas: Trello, OBS.</p>
+        <a href="#" class="btn">Ver clip</a>
+      </div>
+      <div class="card">
+        <h3>Prueba de Software - Formulario</h3>
+        <p>Chequeo de validaciones y flujo de usuario. Herramientas: Postman, Jira.</p>
+        <a href="#" class="btn">Ver reporte</a>
+      </div>
     </div>
-    <script src="script.js"></script>
+  </section>
+
+  <section id="automation">
+    <h2>Automatización</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Login Automatizado</h3>
+        <p>Script en Selenium + Python para automatizar login y verificación de mensajes de error.</p>
+        <a href="#" class="btn">Ver repositorio</a>
+      </div>
+      <div class="card">
+        <h3>Registro de Usuario</h3>
+        <p>Automatización de flujo de registro con validaciones de formulario.</p>
+        <a href="#" class="btn">Ver repositorio</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo" required>
+      <textarea rows="5" placeholder="Mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Victoria QA | Todos los derechos reservados
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
